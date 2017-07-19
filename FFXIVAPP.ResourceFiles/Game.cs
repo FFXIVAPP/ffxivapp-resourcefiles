@@ -1,4 +1,4 @@
-﻿// FFXIVAPP.Resources ~ Game.cs
+﻿// FFXIVAPP.ResourceFiles ~ Game.cs
 // 
 // Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
 // 
@@ -18,7 +18,7 @@
 using System;
 using System.Windows.Media.Imaging;
 
-namespace FFXIVAPP.Resources
+namespace FFXIVAPP.ResourceFiles
 {
     public static class Game
     {

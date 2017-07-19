@@ -1,4 +1,4 @@
-﻿// FFXIVAPP.Resources ~ AssemblyInfo.cs
+﻿// FFXIVAPP.ResourceFiles ~ AssemblyInfo.cs
 // 
 // Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
 // 
@@ -21,11 +21,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FFXIVAPP.Resources")]
+[assembly: AssemblyTitle("FFXIVAPP.ResourceFiles")]
 [assembly: AssemblyDescription("FFXIVAPP Image, Theme and File Resources")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SyndicatedLife")]
-[assembly: AssemblyProduct("FFXIVAPP.Resources")]
+[assembly: AssemblyProduct("FFXIVAPP.ResourceFiles")]
 [assembly: AssemblyCopyright("Copyright © 2007 - 2017 Ryan Wilson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

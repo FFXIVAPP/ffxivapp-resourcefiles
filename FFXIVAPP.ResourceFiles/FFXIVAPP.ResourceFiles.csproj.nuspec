@@ -6,9 +6,9 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://github.com/Icehunter/ffxivapp-resources/blob/master/LICENSE.md</licenseUrl>
-    <projectUrl>https://github.com/Icehunter/ffxivapp-resources</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/Icehunter/ffxivapp-resources/master/FFXIVAPP.Resources/Logo.png</iconUrl>
+    <licenseUrl>https://github.com/Icehunter/ffxivapp-resourcefiles/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/Icehunter/ffxivapp-resourcefiles</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Icehunter/ffxivapp-resourcefiles/master/FFXIVAPP.ResourceFiles/Logo.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
