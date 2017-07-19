@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Icehunter/ffxivapp-resources/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/Icehunter/ffxivapp-resources</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Icehunter/ffxivapp-resources/master/FFXIVAPP.Resources/Logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>
+      1.0.0 initial release
+    </releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>ffxiv ffxivapp resources</tags>
+  </metadata>
+</package>

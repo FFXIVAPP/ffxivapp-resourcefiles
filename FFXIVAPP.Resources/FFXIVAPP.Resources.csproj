@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{38E2405F-58D4-411C-B1DF-6E2D6F14082E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FFXIVAPP.Resources</RootNamespace>
+    <AssemblyName>FFXIVAPP.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\distribution\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\alc.png" />
+    <Resource Include="Icons\avatar.png" />
+    <Resource Include="Icons\chocobo.png" />
+    <Resource Include="Icons\fate_defense.png" />
+    <Resource Include="Icons\fate_escort.png" />
+    <Resource Include="Icons\fate_gather.png" />
+    <Resource Include="Icons\fate_nm.png" />
+    <Resource Include="Icons\fate_slay.png" />
+    <Resource Include="Icons\fishing.png" />
+    <Resource Include="Icons\logging.png" />
+    <Resource Include="Icons\harvesting.png" />
+    <Resource Include="Icons\mining.png" />
+    <Resource Include="Icons\mob_aggressive_1.png" />
+    <Resource Include="Icons\mob_aggressive_2.png" />
+    <Resource Include="Icons\mob_aggressive_3.png" />
+    <Resource Include="Icons\mob_aggressive_4.png" />
+    <Resource Include="Icons\mob_aggressive_5.png" />
+    <Resource Include="Icons\mob_aggressive_6.png" />
+    <Resource Include="Icons\mob_claimed.png" />
+    <Resource Include="Icons\mob_fate.png" />
+    <Resource Include="Icons\mob_passive_1.png" />
+    <Resource Include="Icons\mob_passive_2.png" />
+    <Resource Include="Icons\mob_passive_3.png" />
+    <Resource Include="Icons\mob_passive_4.png" />
+    <Resource Include="Icons\mob_passive_5.png" />
+    <Resource Include="Icons\mob_passive_6.png" />
+    <Resource Include="Icons\mob_unclaimed.png" />
+    <Resource Include="Icons\quarrying.png" />
+    <Resource Include="Icons\radar_heading.png" />
+    <Resource Include="Icons\vendor.png" />
+    <Resource Include="Theme\cn.png" />
+    <Resource Include="Theme\de.png" />
+    <Resource Include="Theme\default-avatar.jpg" />
+    <Resource Include="Theme\default-plugin-logo.jpg" />
+    <Resource Include="Theme\en.png" />
+    <Resource Include="Theme\ffxivapp-base.png" />
+    <Resource Include="Theme\ffxivapp.ico" />
+    <Resource Include="Theme\ffxivapp.png" />
+    <Resource Include="Theme\fr.png" />
+    <Resource Include="Theme\splash.png" />
+    <Resource Include="Theme\ja.png" />
+    <Resource Include="Theme\ko.png" />
+    <Resource Include="Theme\ffxivapp-logo.png" />
+    <Resource Include="Theme\ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\arc.png" />
+    <Resource Include="Icons\arm.png" />
+    <Resource Include="Icons\acn.png" />
+    <Resource Include="Icons\ast.png" />
+    <Resource Include="Icons\blm.png" />
+    <Resource Include="Icons\brd.png" />
+    <Resource Include="Icons\bsm.png" />
+    <Resource Include="Icons\btn.png" />
+    <Resource Include="Icons\cnj.png" />
+    <Resource Include="Icons\crp.png" />
+    <Resource Include="Icons\cul.png" />
+    <Resource Include="Icons\drg.png" />
+    <Resource Include="Icons\drk.png" />
+    <Resource Include="Icons\fsh.png" />
+    <Resource Include="Icons\gld.png" />
+    <Resource Include="Icons\gsm.png" />
+    <Resource Include="Icons\lnc.png" />
+    <Resource Include="Icons\ltw.png" />
+    <Resource Include="Icons\mch.png" />
+    <Resource Include="Icons\min.png" />
+    <Resource Include="Icons\mnk.png" />
+    <Resource Include="Icons\mrd.png" />
+    <Resource Include="Icons\nin.png" />
+    <Resource Include="Icons\pld.png" />
+    <Resource Include="Icons\pug.png" />
+    <Resource Include="Icons\rdm.png" />
+    <Resource Include="Icons\rog.png" />
+    <Resource Include="Icons\sam.png" />
+    <Resource Include="Icons\sch.png" />
+    <Resource Include="Icons\smn.png" />
+    <Resource Include="Icons\thm.png" />
+    <Resource Include="Icons\unknown.png" />
+    <Resource Include="Icons\war.png" />
+    <Resource Include="Icons\whm.png" />
+    <Resource Include="Icons\wvr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\aetheryte.png" />
+    <Resource Include="Icons\gathering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\spearfishing.png" />
+    <Resource Include="Icons\spearfishing_super.png" />
+    <Resource Include="Icons\logging_super.png" />
+    <Resource Include="Icons\harvesting_super.png" />
+    <Resource Include="Icons\mining_super.png" />
+    <Resource Include="Icons\quarrying_super.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Theme\default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FFXIVAPP.Resources.csproj.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>nuget pack $(ProjectPath) -Properties Configuration=$(ConfigurationName) -Properties Platform=$(PlatformName) -IncludeReferencedProjects -OutputDirectory ..\packages\</PostBuildEvent>
+  </PropertyGroup>
+</Project>
