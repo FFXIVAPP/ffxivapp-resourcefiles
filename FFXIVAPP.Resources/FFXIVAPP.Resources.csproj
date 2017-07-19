@@ -91,7 +91,7 @@
     <Resource Include="Theme\cn.png" />
     <Resource Include="Theme\de.png" />
     <Resource Include="Theme\default-avatar.jpg" />
-    <Resource Include="Theme\default-plugin-logo.jpg" />
+    <Resource Include="Theme\default-plugin-logo.png" />
     <Resource Include="Theme\en.png" />
     <Resource Include="Theme\ffxivapp-base.png" />
     <Resource Include="Theme\ffxivapp.ico" />

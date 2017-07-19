@@ -32,7 +32,7 @@ namespace FFXIVAPP.Resources
 
         public static BitmapImage Default = new BitmapImage(new Uri($"{Constants.ThemePack}/default.png"));
         public static BitmapImage DefaultAvatar = new BitmapImage(new Uri($"{Constants.ThemePack}/default-avatar.jpg"));
-        public static BitmapImage DefaultPluginLogo = new BitmapImage(new Uri($"{Constants.ThemePack}/default-plugin-logo.jpg"));
+        public static BitmapImage DefaultPluginLogo = new BitmapImage(new Uri($"{Constants.ThemePack}/default-plugin-logo.png"));
 
         public static BitmapImage FFXIVAPPIcon = new BitmapImage(new Uri($"{Constants.ThemePack}/ffxivapp.ico"));
         public static BitmapImage FFXIVAPPBase = new BitmapImage(new Uri($"{Constants.ThemePack}/ffxivapp-base.png"));
