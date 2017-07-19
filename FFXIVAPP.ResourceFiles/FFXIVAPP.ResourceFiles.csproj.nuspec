@@ -12,6 +12,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
+      1.0.1 forgot the damn renaming of pack path
       1.0.0 initial release
     </releaseNotes>
     <copyright>$copyright$</copyright>
