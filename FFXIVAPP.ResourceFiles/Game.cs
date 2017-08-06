@@ -33,7 +33,7 @@ namespace FFXIVAPP.ResourceFiles
         public static BitmapImage Blackmage = new BitmapImage(new Uri($"{Constants.IconsPack}/blm.png"));
         public static BitmapImage Blacksmith = new BitmapImage(new Uri($"{Constants.IconsPack}/bsm.png"));
         public static BitmapImage Botanist = new BitmapImage(new Uri($"{Constants.IconsPack}/btn.png"));
-        public static BitmapImage Carpenter = new BitmapImage(new Uri($"{Constants.IconsPack}/crp.png"));
+        public static BitmapImage Carpenter = new BitmapImage(new Uri($"{Constants.IconsPack}/cpt.png"));
         public static BitmapImage Chocobo = new BitmapImage(new Uri($"{Constants.IconsPack}/chocobo.png"));
         public static BitmapImage Conjurer = new BitmapImage(new Uri($"{Constants.IconsPack}/cnj.png"));
         public static BitmapImage Culinarian = new BitmapImage(new Uri($"{Constants.IconsPack}/cul.png"));
