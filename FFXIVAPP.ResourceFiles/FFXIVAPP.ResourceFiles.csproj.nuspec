@@ -11,11 +11,6 @@
     <iconUrl>https://raw.githubusercontent.com/Icehunter/ffxivapp-resourcefiles/master/FFXIVAPP.ResourceFiles/Logo.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>
-      1.0.2 crp => cpt
-      1.0.1 forgot the damn renaming of pack path
-      1.0.0 initial release
-    </releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>ffxiv ffxivapp resources</tags>
   </metadata>
