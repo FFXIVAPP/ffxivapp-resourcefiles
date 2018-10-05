@@ -73,6 +73,8 @@ namespace FFXIVAPP.ResourceFiles {
 
         public static Bitmap TimesIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-times-20.png"));
 
+        public static Bitmap PowerOffIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-poweroff-20.png"));
+
         public static Assembly Assembly { get => assembly; set => assembly = value; }
 
         public static Bitmap GetImageByName(string name) {
