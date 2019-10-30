@@ -10,42 +10,76 @@
 
 namespace FFXIVAPP.ResourceFiles {
     using System;
-    using System.Windows.Media.Imaging;
+    using System.IO;
+    using System.Reflection;
+    using Avalonia.Media.Imaging;
 
     public static class Theme {
-        public static BitmapImage ChineseFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/cn.png"));
+        private static Assembly assembly = typeof(Theme).GetTypeInfo().Assembly;
+        private static Stream GetResource(string path) => assembly.GetManifestResourceStream(path);
+        public static Bitmap ChineseFlag = new Bitmap(GetResource($"{Constants.ThemePack}.cn.png"));
 
-        public static BitmapImage Default = new BitmapImage(new Uri($"{Constants.ThemePack}/default.png"));
+        public static Bitmap Default = new Bitmap(GetResource($"{Constants.ThemePack}.default.png"));
 
-        public static BitmapImage DefaultAvatar = new BitmapImage(new Uri($"{Constants.ThemePack}/default-avatar.jpg"));
+        public static Bitmap DefaultAvatar = new Bitmap(GetResource($"{Constants.ThemePack}.default-avatar.jpg"));
 
-        public static BitmapImage DefaultPluginLogo = new BitmapImage(new Uri($"{Constants.ThemePack}/default-plugin-logo.png"));
+        public static Bitmap DefaultPluginLogo = new Bitmap(GetResource($"{Constants.ThemePack}.default-plugin-logo.png"));
 
-        public static BitmapImage EnglishFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/en.png"));
+        public static Bitmap EnglishFlag = new Bitmap(GetResource($"{Constants.ThemePack}.en.png"));
 
-        public static BitmapImage FFXIVAPP = new BitmapImage(new Uri($"{Constants.ThemePack}/ffxivapp.png"));
+        public static Bitmap FFXIVAPP = new Bitmap(GetResource($"{Constants.ThemePack}.ffxivapp.png"));
 
-        public static BitmapImage FFXIVAPPBase = new BitmapImage(new Uri($"{Constants.ThemePack}/ffxivapp-base.png"));
+        public static Bitmap FFXIVAPPBase = new Bitmap(GetResource($"{Constants.ThemePack}.ffxivapp-base.png"));
 
-        public static BitmapImage FFXIVAPPIcon = new BitmapImage(new Uri($"{Constants.ThemePack}/ffxivapp.ico"));
+        public static Bitmap FFXIVAPPIcon = new Bitmap(GetResource($"{Constants.ThemePack}.ffxivapp.ico"));
 
-        public static BitmapImage FFXIVAPPLogo = new BitmapImage(new Uri($"{Constants.ThemePack}/ffxivapp-logo.png"));
+        public static Bitmap FFXIVAPPLogo = new Bitmap(GetResource($"{Constants.ThemePack}.ffxivapp-logo.png"));
 
-        public static BitmapImage FrenchFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/fr.png"));
+        public static Bitmap FrenchFlag = new Bitmap(GetResource($"{Constants.ThemePack}.fr.png"));
 
-        public static BitmapImage GermanFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/de.png"));
+        public static Bitmap GermanFlag = new Bitmap(GetResource($"{Constants.ThemePack}.de.png"));
 
-        public static BitmapImage JapaneseFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/ja.png"));
+        public static Bitmap JapaneseFlag = new Bitmap(GetResource($"{Constants.ThemePack}.ja.png"));
 
-        public static BitmapImage KoreanFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/ko.png"));
+        public static Bitmap KoreanFlag = new Bitmap(GetResource($"{Constants.ThemePack}.ko.png"));
 
-        public static BitmapImage RussianFlag = new BitmapImage(new Uri($"{Constants.ThemePack}/ru.png"));
+        public static Bitmap RussianFlag = new Bitmap(GetResource($"{Constants.ThemePack}.ru.png"));
 
-        public static BitmapImage Splash = new BitmapImage(new Uri($"{Constants.ThemePack}/splash.png"));
+        public static Bitmap Splash = new Bitmap(GetResource($"{Constants.ThemePack}.splash.png"));
 
-        public static BitmapImage GetImageByName(string name) {
+        public static Bitmap CameraIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-camera-128.png"));
+
+        public static Bitmap CogIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-cog-128.png"));
+        
+        public static Bitmap CogIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-cog-20.png"));
+
+        public static Bitmap FloppyIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-floppy-128.png"));
+        
+        public static Bitmap HomeIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-home-128.png"));
+        
+        public static Bitmap HomeIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-home-20.png"));
+
+        public static Bitmap InfoIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-info-128.png"));
+        
+        public static Bitmap InfoIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-info-20.png"));
+
+        public static Bitmap RefreshIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-refresh-128.png"));
+        
+        public static Bitmap RefreshIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-refresh-20.png"));
+
+        public static Bitmap StarIcon128 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-star-128.png"));
+        
+        public static Bitmap StarIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-star-20.png"));
+
+        public static Bitmap TimesIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-times-20.png"));
+
+        public static Bitmap PowerOffIcon20 = new Bitmap(GetResource($"{Constants.ThemePack}.fa-poweroff-20.png"));
+
+        public static Assembly Assembly { get => assembly; set => assembly = value; }
+
+        public static Bitmap GetImageByName(string name) {
             try {
-                return new BitmapImage(new Uri($"{Constants.IconsPack}/{name.ToLowerInvariant()}.png"));
+                return new Bitmap(GetResource($"{Constants.IconsPack}.{name.ToLowerInvariant()}.png"));
             }
             catch (Exception) {
                 return Default;
@@ -53,7 +87,7 @@ namespace FFXIVAPP.ResourceFiles {
         }
 
         public static string GetImagePackURI(string name) {
-            return $"{Constants.ThemePack}/{name.ToLowerInvariant()}.png";
+            return $"{Constants.ThemePack}.{name.ToLowerInvariant()}.png";
         }
-    }
+   }
 }

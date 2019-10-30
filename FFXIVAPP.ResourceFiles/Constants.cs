@@ -10,8 +10,8 @@
 
 namespace FFXIVAPP.ResourceFiles {
     internal static class Constants {
-        public const string IconsPack = "pack://application:,,,/FFXIVAPP.ResourceFiles;component/Icons";
+        public const string IconsPack = "FFXIVAPP.ResourceFiles.Icons";
 
-        public const string ThemePack = "pack://application:,,,/FFXIVAPP.ResourceFiles;component/Theme";
+        public const string ThemePack = "FFXIVAPP.ResourceFiles.Theme";
     }
 }
