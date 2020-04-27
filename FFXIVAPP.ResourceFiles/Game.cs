@@ -33,6 +33,8 @@ namespace FFXIVAPP.ResourceFiles {
 
         public static BitmapImage Blacksmith = new BitmapImage(new Uri($"{Constants.IconsPack}/bsm.png"));
 
+        public static BitmapImage Bluemage = new BitmapImage(new Uri($"{Constants.IconsPack}/blu.png"));
+
         public static BitmapImage Botanist = new BitmapImage(new Uri($"{Constants.IconsPack}/btn.png"));
 
         public static BitmapImage Carpenter = new BitmapImage(new Uri($"{Constants.IconsPack}/cpt.png"));
@@ -42,6 +44,8 @@ namespace FFXIVAPP.ResourceFiles {
         public static BitmapImage Conjurer = new BitmapImage(new Uri($"{Constants.IconsPack}/cnj.png"));
 
         public static BitmapImage Culinarian = new BitmapImage(new Uri($"{Constants.IconsPack}/cul.png"));
+
+        public static BitmapImage Dancer = new BitmapImage(new Uri($"{Constants.IconsPack}/dnc.png"));
 
         public static BitmapImage DarkKnight = new BitmapImage(new Uri($"{Constants.IconsPack}/drk.png"));
 
@@ -66,6 +70,8 @@ namespace FFXIVAPP.ResourceFiles {
         public static BitmapImage Gladiator = new BitmapImage(new Uri($"{Constants.IconsPack}/gld.png"));
 
         public static BitmapImage Goldsmith = new BitmapImage(new Uri($"{Constants.IconsPack}/gsm.png"));
+
+        public static BitmapImage Gunbreaker = new BitmapImage(new Uri($"{Constants.IconsPack}/gnb.png"));
 
         public static BitmapImage Harvesting = new BitmapImage(new Uri($"{Constants.IconsPack}/harvesting.png"));
 
