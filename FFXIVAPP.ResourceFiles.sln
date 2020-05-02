@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.ResourceFiles", "FFXIVAPP.ResourceFiles\FFXIVAPP.ResourceFiles.csproj", "{38E2405F-58D4-411C-B1DF-6E2D6F14082E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.ResourceFiles", "FFXIVAPP.ResourceFiles\FFXIVAPP.ResourceFiles.csproj", "{4F8437FC-EE41-4A15-80FC-93BF579A2E28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{388B4A80-BDA2-4437-B5B5-57A38D295298}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,12 +23,12 @@ Global
 		ReleaseDeploy|x86 = ReleaseDeploy|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Debug|x86.ActiveCfg = Debug|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Debug|x86.Build.0 = Debug|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Release|x86.ActiveCfg = Release|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Release|x86.Build.0 = Release|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.ReleaseDeploy|x86.ActiveCfg = ReleaseDeploy|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.ReleaseDeploy|x86.Build.0 = ReleaseDeploy|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Debug|x86.ActiveCfg = Debug|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Debug|x86.Build.0 = Debug|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Release|x86.ActiveCfg = Release|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Release|x86.Build.0 = Release|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.ReleaseDeploy|x86.ActiveCfg = ReleaseDeploy|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.ReleaseDeploy|x86.Build.0 = ReleaseDeploy|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{38E2405F-58D4-411C-B1DF-6E2D6F14082E}</ProjectGuid>
+    <ProjectGuid>{4F8437FC-EE41-4A15-80FC-93BF579A2E28}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FFXIVAPP.ResourceFiles</RootNamespace>
