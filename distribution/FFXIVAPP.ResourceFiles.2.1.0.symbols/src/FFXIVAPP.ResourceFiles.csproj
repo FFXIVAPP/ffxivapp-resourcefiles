@@ -1,0 +1,183 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp3.1;net462;net48</TargetFrameworks>
+		<IncludeSymbols>true</IncludeSymbols>
+		<Authors>Ryan Wilson</Authors>
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageProjectUrl>https://github.com/FFXIVAPP/ffxivapp-resourcefiles</PackageProjectUrl>
+		<PackageIconUrl></PackageIconUrl>
+		<RepositoryUrl></RepositoryUrl>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageTags>ffxiv ffxivapp resources</PackageTags>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>2.1.0</Version>
+		<Company>SyndicatedLife</Company>
+		<Product>FFXIVAPP.ResourceFiles</Product>
+		<Description>FFXIVAPP Image, Theme and File Resources</Description>
+		<Copyright>Copyright © 2007 - 2020 Ryan Wilson</Copyright>
+		<FileVersion>2.1.0.0</FileVersion>
+		<AssemblyVersion>2.1.0.0</AssemblyVersion>
+		<AssemblyName>FFXIVAPP.ResourceFiles</AssemblyName>
+		<RootNamespace>FFXIVAPP.ResourceFiles</RootNamespace>
+		<PackageId>FFXIVAPP.ResourceFiles</PackageId>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType></RepositoryType>
+		<PackageIcon>Logo.png</PackageIcon>
+		<UseWpf>true</UseWpf>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="$(SolutionDir)stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="..\distribution\**" />
+		<EmbeddedResource Remove="..\distribution\**" />
+		<None Remove="..\distribution\**" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Content Include="*">
+      <Pack>true</Pack>
+      <PackagePath>\src</PackagePath>
+    </Content>
+  </ItemGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>..\debug</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>..\distribution</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.1|AnyCPU'">
+		<DocumentationFile>..\distribution\netcoreapp3.1\FFXIVAPP.ResourceFiles.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.1|AnyCPU'">
+		<DocumentationFile>..\debug\netcoreapp3.1\FFXIVAPP.ResourceFiles.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net462|AnyCPU'">
+		<DocumentationFile>..\distribution\net462\FFXIVAPP.ResourceFiles.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net462|AnyCPU'">
+		<DocumentationFile>..\debug\net462\FFXIVAPP.ResourceFiles.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net48|AnyCPU'">
+		<DocumentationFile>..\distribution\net48\FFXIVAPP.ResourceFiles.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
+		<DocumentationFile>..\debug\net48\FFXIVAPP.ResourceFiles.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="Icons\alc.png" />
+		<Resource Include="Icons\avatar.png" />
+		<Resource Include="Icons\chocobo.png" />
+		<Resource Include="Icons\fate_defense.png" />
+		<Resource Include="Icons\fate_escort.png" />
+		<Resource Include="Icons\fate_gather.png" />
+		<Resource Include="Icons\fate_nm.png" />
+		<Resource Include="Icons\fate_slay.png" />
+		<Resource Include="Icons\fishing.png" />
+		<Resource Include="Icons\logging.png" />
+		<Resource Include="Icons\harvesting.png" />
+		<Resource Include="Icons\mining.png" />
+		<Resource Include="Icons\mob_aggressive_1.png" />
+		<Resource Include="Icons\mob_aggressive_2.png" />
+		<Resource Include="Icons\mob_aggressive_3.png" />
+		<Resource Include="Icons\mob_aggressive_4.png" />
+		<Resource Include="Icons\mob_aggressive_5.png" />
+		<Resource Include="Icons\mob_aggressive_6.png" />
+		<Resource Include="Icons\mob_claimed.png" />
+		<Resource Include="Icons\mob_fate.png" />
+		<Resource Include="Icons\mob_passive_1.png" />
+		<Resource Include="Icons\mob_passive_2.png" />
+		<Resource Include="Icons\mob_passive_3.png" />
+		<Resource Include="Icons\mob_passive_4.png" />
+		<Resource Include="Icons\mob_passive_5.png" />
+		<Resource Include="Icons\mob_passive_6.png" />
+		<Resource Include="Icons\mob_unclaimed.png" />
+		<Resource Include="Icons\quarrying.png" />
+		<Resource Include="Icons\radar_heading.png" />
+		<Resource Include="Icons\vendor.png" />
+		<Resource Include="Theme\cn.png" />
+		<Resource Include="Theme\de.png" />
+		<Resource Include="Theme\default-avatar.jpg" />
+		<Resource Include="Theme\default-plugin-logo.png" />
+		<Resource Include="Theme\en.png" />
+		<Resource Include="Theme\ffxivapp-base.png" />
+		<Resource Include="Theme\ffxivapp.ico" />
+		<Resource Include="Theme\ffxivapp.png" />
+		<Resource Include="Theme\fr.png" />
+		<Resource Include="Theme\splash.png" />
+		<Resource Include="Theme\ja.png" />
+		<Resource Include="Theme\ko.png" />
+		<Resource Include="Theme\ffxivapp-logo.png" />
+		<Resource Include="Theme\ru.png" />
+		<Resource Include="Icons\arc.png" />
+		<Resource Include="Icons\arm.png" />
+		<Resource Include="Icons\acn.png" />
+		<Resource Include="Icons\ast.png" />
+		<Resource Include="Icons\blm.png" />
+		<Resource Include="Icons\brd.png" />
+		<Resource Include="Icons\bsm.png" />
+		<Resource Include="Icons\btn.png" />
+		<Resource Include="Icons\cnj.png" />
+		<Resource Include="Icons\cpt.png" />
+		<Resource Include="Icons\cul.png" />
+		<Resource Include="Icons\drg.png" />
+		<Resource Include="Icons\drk.png" />
+		<Resource Include="Icons\fsh.png" />
+		<Resource Include="Icons\gld.png" />
+		<Resource Include="Icons\gsm.png" />
+		<Resource Include="Icons\lnc.png" />
+		<Resource Include="Icons\ltw.png" />
+		<Resource Include="Icons\mch.png" />
+		<Resource Include="Icons\min.png" />
+		<Resource Include="Icons\mnk.png" />
+		<Resource Include="Icons\mrd.png" />
+		<Resource Include="Icons\nin.png" />
+		<Resource Include="Icons\pld.png" />
+		<Resource Include="Icons\pug.png" />
+		<Resource Include="Icons\rdm.png" />
+		<Resource Include="Icons\rog.png" />
+		<Resource Include="Icons\sam.png" />
+		<Resource Include="Icons\sch.png" />
+		<Resource Include="Icons\smn.png" />
+		<Resource Include="Icons\thm.png" />
+		<Resource Include="Icons\unknown.png" />
+		<Resource Include="Icons\war.png" />
+		<Resource Include="Icons\whm.png" />
+		<Resource Include="Icons\wvr.png" />
+		<Resource Include="Icons\player.png" />
+		<Resource Include="Icons\aetheryte.png" />
+		<Resource Include="Icons\gathering.png" />
+		<Resource Include="Icons\spearfishing.png" />
+		<Resource Include="Icons\spearfishing_super.png" />
+		<Resource Include="Icons\logging_super.png" />
+		<Resource Include="Icons\harvesting_super.png" />
+		<Resource Include="Icons\mining_super.png" />
+		<Resource Include="Icons\quarrying_super.png" />
+		<Resource Include="Icons\blu.png" />
+		<Resource Include="Icons\dnc.png" />
+		<Resource Include="Icons\gnb.png" />
+		<Resource Include="Theme\default.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="Pack">
+		<Exec Command="dotnet pack $(ProjectPath) --no-build --include-symbols --include-source -c $(ConfigurationName) -o ..\published&#xD;&#xA;%25SYSTEMROOT%25\System32\WindowsPowerShell\v1.0\powershell.exe –NonInteractive –ExecutionPolicy Unrestricted –command &quot;&amp; { &amp;'$(SolutionDir)RenameSymbolsToPackage.ps1' '$(TargetName)' }&quot;" />
+	</Target>
+</Project>
